@@ -1,5 +1,5 @@
 # Cek-Deiabetes
-Pemenuhan TUgas Flask ML
+Pemenuhan Tugas Flask ML
 Cara Run:
 -> Download Zip 
 -> Extract 
