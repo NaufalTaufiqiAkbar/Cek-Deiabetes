@@ -1,6 +1,6 @@
 # Cek-Deiabetes
-Pemenuhan Tugas Flask ML
-Cara Run:
+# Pemenuhan Tugas Flask ML
+# Cara Run:
 -> Download Zip 
 -> Extract 
 -> Open folder(lewat VSCode) 
