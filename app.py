@@ -3,6 +3,7 @@ import pandas as pd
 from flask import Flask, request, jsonify, render_template
 import pickle
 
+
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
 
@@ -26,9 +27,9 @@ def predict():
     prediction = model.predict( sc.transform(final_features) )
 
     if prediction == 1:
-        pred = "Anda Menderita Diabetes, Silahkan Hubungi Doctor"
+        pred = "Anda Menderita Diabetes, Silahkan Hubungi Dokter"
     elif prediction == 0:
-        pred = "Selamat Anda Sehat, Tetap Jaga Pola Makan 4 Sehat 5 Sepurna :)"
+        pred = "Selamat Anda Sehat, Tetap Jaga Pola Makan 4 Sehat 5 Sempurna :)"
     output = pred
 
     return render_template('index.html', prediction_text='{}'.format(output))
